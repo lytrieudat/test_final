@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="bootstrap//css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/style_product.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body onload="javascript:getPageUrlId(),productsDetail(),Carousel(),addCart()">
+    <div class="image-header">
+        <div class="main_page">
+            <div class="main_nav">
+                <div class="row">
+                    <div class="col-md-8 col-xs-6 logo">
+                    </div>
+                    <div class="col-md-4 col-xs-6 menu">
+                        <ul>
+                            <li><button type="button" class="btn-cart" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button></li>
+                            <li><a href="login.html">Sign in|Sign Up</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-content">
+                        <h1>Welcome to Eyeconic Store</h1>
+                        <h2>At Eyeconic Store, You’ll find more than 100 designer brands all with free delivery and free returns. Our customers come for our huge range of products and our top level of customer service. And bring you the very best the world of designer eyewear has to offer.</h2>
+                    </div>  
+                    <div class="col-md-12 col-xs-12 nav">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="#">SUNGLASESS</a>
+                                <div class="menu-drop">
+                                <ul class="menu-drop-ul">
+                                    <li class="menu-drop-li"><a href="glass_brand.html?key1=g">Gucci</a></li>
+                                    <li class="menu-drop-li"><a href="glass_brand.html?key1=k">Calve Kevins</a></li>
+                                    <li class="menu-drop-li"><a href="glass_brand.html?key1=l">Lacoste</a></li>
+                                    <li class="menu-drop-li"><a href="glass_brand.html?key1=n">Nike</a></li>
+                                </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">CONTACT LENS</a>
+                                <div class="menu-drop">
+                                    <ul class="menu-drop-ul">
+                                        <li class="menu-drop-li"><a href="brand.html?key1=a">AirOptix</a></li>
+                                        <li class="menu-drop-li"><a href="brand.html?key1=c">ChromaView</a></li>
+                                        <li class="menu-drop-li"><a href="brand.html?key1=e">EyesFusion</a></li>
+                                        <li class="menu-drop-li"><a href="brand.html?key1=f">FreshLook</a></li>
+                                    </ul>
+                                    </div>
+                            </li>
+                            <li><a href="ServicePage.html">SERVICES</a>
+                                <div class="menu-drop">
+                                    <ul class="menu-drop-ul">
+                                        <!-- <li class="menu-drop-li"><a href="#">Free-Delivery</a></li>
+                                        <li class="menu-drop-li"><a href="#">Cleaning</a></li>
+                                        <li class="menu-drop-li"><a href="#">Warranty</a></li> -->
+                                    </ul>
+                                    </div></li>
+                            <li><a href="ContactPage.html">CONTACT US</a>
+                                <div class="menu-drop">
+                                    <ul class="menu-drop-ul">
+                                        <!-- <!-- <li class="menu-drop-li"><a href="#">Location Store</a></li> -->
+                                        <li class="menu-drop-li"><a href="AboutUs.html">About Us</a></li> -->
+                                    </ul></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>  
+             
+        </div>
+    </div>
+
+    <div class="dropdown" style="float:right;margin-right: 100px;">
+        <a href="" data-toggle="dropdown">Language<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="#" onclick="languageEngProductsL()">English</a></li>
+            <li><a href="#" onclick="languageViProductsL()">Tiếng Việt</a></li>
+        </ul>
+        </div>
+    <div class="banner-img">
+        <img src="image/panel/lens-banner.jpg">
+    </div>
+   
+    
+    <div class="container">
+            <div id="get_data">
+            <!-- <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5">
+                    <div class="product-gallery">
+                        <div class="product-gallery-thumbnails">
+                          <ol class="thumbnails-list list-unstyled">
+                            <li><img src="images\Airoptix\1\1.jpg" alt=""></li>
+                            <li><img src="images\Airoptix\1\2.jpg" alt=""></li>
+                          </ol>
+                        </div>
+                        <div class="product-gallery-featured">
+                          <img src="images\Airoptix\1\1.jpg"alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-7">
+                    <div class="name_product">FRESHLOOK</div><br>
+                    <span class="small_name">FRESHLOOK COLORBLENDS STERLING GRAY PRESCRIPTION COLORED</span><br>
+                    <div class="comment"><span><p>Recreate your everyday look with the Freshlook Colorblends Sterling Gray Prescription Contact Lenses. </p></span></div><br>
+                    <div class="price">Price:<span>$19.99</span></div><br>
+                    <div class="color" >Color:<span style="color: Purple;">Purple</span></div><br>
+                    <div class="product_promotion">
+                        <ul>Promotion:
+                            <li><a href="">Buy One Get One Free</a></li>
+                            <li><a href="">30% Off Entire Order</a></li>
+                        </ul>
+                    </div>
+                    <button id="btn_buy">Buy Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                <ul class="nav nav-tabs">
+                    <li class="active" ><a href="#spec" data-toggle="tab">SPEC</a></li>
+                    <li><a href="#description" data-toggle="tab">DESCRIPTION</a></li>
+                    <li><a href="#help" data-toggle="tab">NEED HELP?</a></li>
+                </ul>
+                
+                <div class="tab-content">
+                    <div id="spec" class="tab-pane active">
+                        <table>
+                            <TR>
+                               <TD>Brand</TD>
+                               <TD>Freshlook</TD>
+                            </TR>
+                            <TR>
+                               <TD>Manufacturer</TD>
+                               <TD>Alcon</TD>
+                            </TR>
+                            <TR>
+                               <TD>Style</TD>
+                               <TD>Natural</TD>
+                            </TR>
+                            <TR>
+                                <TD>Duration</TD>
+                                <TD>30 Day</TD>
+                             </TR>
+                             <TR>
+                                <TD>Quantity</TD>
+                                <TD>2 Per Pack (Pair)</TD>
+                             </TR>
+                             <TR>
+                                <TD>Prescription / Corrective Lens</TD>
+                                <TD>Yes</TD>
+                             </TR>
+                             <TR>
+                                <TD>Type</TD>
+                                <TD>Prescription</TD>
+                             </TR>
+                             <TR>
+                                <TD>Diameter</TD>
+                                <TD>14.5</TD>
+                             </TR>
+                             <TR>
+                                <TD>Base Curve</TD>
+                                <TD>8.6</TD>
+                             </TR>
+                             <TR>
+                                <TD>Water Content</TD>
+                                <TD>55%</TD>
+                             </TR>
+                             <TR>
+                                <TD>Made From</TD>
+                                <TD>Phemfilcon A</TD>
+                             </TR>
+                            </table>
+                    </div>
+                    <div id="description" class="tab-pane">
+                        <p>
+                            Transform your eye colour with Freshlook Colorblends Sterling Gray Contact Lenses in a prescription monthly pair.<br>
+                            For a vibrant eye colour change that is sure to be aesthetically eye catching and bold, be sure to consider these sterling gray contact lenses. Available in a monthly 2 pack, this pair of natural contact lenses features a 3 tone colour pigment to give enhanced depth, definition and detail to your iris. As well as being vibrant cosmetic contacts, these lenses are available in corrective enhancements for short sighted vision.<br>
+                            Change your basic contact lenses for the Freshlook Colorblends Sterling Gray Prescription Contact Lenses for clear vision and bold colour.<br>                    
+                            <br>Contact Lens Essential Info:<br>                   
+                            Doesn't Impair Visibility<br>
+                            Sold As A Pair<br>
+                            Suitable For Daily Wear<br>
+                            Soft Contact Lenses<br>
+                            Made From 55% Water / 45% Phemfilcon A<br>
+                            Stored In Sterile Phosphate-Acetate Buffered Saline Solution<br>
+                        </p>
+                        </div>
+                    <div id="help" class="tab-pane">
+                        <p>
+                            FAQ HELP & USEFUL LINKS<br>
+                            Have a question about using our coloured contact lenses? Make sure to visit our Care Guides to find frequently asked questions, step by step guides, and RX information all in one place.<br>
+                            To help you choose the right lenses for you, when you are looking at a product you will see:<br><br>
+                            Transparency Guide: Each product is rated Enhancing, Vibrant, or Full Colour to help you choose a style to cover your natural eye colour.<br>
+                            Product Measurements: In the product details, we list diameter and base curve so you can ensure that the lens measurements match your latest prescription.<br>
+                            Product Duration: Some lenses such as 30 day and 90 day types are re-usable whereas daily lenses are designed for a single use only.<br>
+                            Type: You are ordering either Plano (non-prescription) or Prescription contact lenses. Make sure to choose your prescription strength when you add the product to your basket, if you are ordering a prescription product. Prescription strengths are not added afterwards.<br>
+                            Remember: You should always consult your optician for a contact lens fitting, even if you are wearing non-prescription coloured contacts.<br>
+                        </p>
+                    </div>           
+                </div>
+            </div>
+            <h2>Similar Style</h2>
+        </div> -->
+            </div>
+        <div class="row" id="similarProduct"></div>
+        </div>
+
+        <div class="other_brand content">
+            <h1>All The Brands You Love</h1>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                    <a href="brand.html?key1=a"><img src="images/Airoptix/airoptix-01.png" style="width: 100%;height: auto;" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                    <a href="brand.html?key1=c"><img src="images/Chromaview/Chromaview-01-01.png" style="width: 100%;height: auto;" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                    <a href="brand.html?key1=e"><img src="images/Eyefusion/Eyefusion-01.png" style="width: 100%;height: auto;" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 ">
+                    <a href="brand.html?key1=f"><img src="images/Freshlook/freshlook-01.png" style="width: 100%;height: auto;" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div class="container-footer">
+                    <div class="footer-row">
+                        <div class="footer-col">
+                            <h4>Eyeonic Store</h4>
+                            <ul>
+                                <li><a href="̀index.html">Home Page</a></li>
+                                <li><a href="ContactPage.html">Location Us</a></li>
+                                <li><a href="ContactPage.html">Send Us Message</a></li>
+                                <li><a href="̀AboutUs.html">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Branding Sunglasses</h4>
+                            <ul>
+                                <li><a href="glass_brand.html?key1=g">Gucci</a></li>
+                                <li><a href="glass_brand.html?key1=k">Calve Kevins</a></li>
+                                <li><a href="glass_brand.html?key1=l">Lacoste</a></li>
+                                <li><a href="glass_brand.html?key1=n">Nike</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Contact Lenses</h4>
+                            <ul>
+                                <li><a href="brand.html?key1=a">AirOptix</a></li>
+                                <li><a href="brand.html?key1=c">ChromaView</a></li>
+                                <li><a href="brand.html?key1=e">EyesFusion</a></li>
+                                <li><a href="brand.html?key1=f">FreshLook</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="̀#" class="fa fa-facebook"></a>
+                                <a href="̀#" class="fa fa-twitter"></a>
+                                <a href="̀#" class="fa fa-youtube"></a>
+                                <a href="̀#" class="fa fa-instagram"></a>
+                            </div>
+                            <aside>
+                                <h4>Call Us</h4>
+                                <h5>Call: 1.800.556.926</h5>
+                                <h5>MON-FRI 9AM - 5PM</h5>
+                                <h5>Email: eyeonicstore@gmail.com</h5>
+                                <img src="image/icon-web/QR.png">
+                            </aside>
+                        </div>
+                    </div>
+                    <div class="last-content">
+                        <h4>&copy Copy Right By Group 2 Class T1-M0-2103</h4>
+                    </div>
+                </div>
+        </footer>
+
+   <!-- Form -->
+    <!-- Form -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Shopping Cart</h1>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <table class="show-cart table">
+                
+              </table>
+              <div>Total price: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer" onsubmit="return false">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" onclick ="openForm()" class="btn btn-primary">Order now</button>
+              <button class="clear-cart btn btn-danger">Clear Cart</button>
+            </div>
+          </div>
+        </div>
+    
+          <!-- Form -->
+        <div class="container-order"  id="form">
+        <form class = "order-form" action="index.html" id="paymentform" onsubmit="return validatedPaymentForm()"> 
+          <div class="row">
+            <div class="col-50">
+                <button class="closeform" onclick="closeForm()" style="width:25px;cursor: pointer;">X</button>
+              <h3>Billing Address</h3>
+              <label for="email"><i class="fa fa-envelope"></i> Email</label>
+              <input type="text" id="email" name="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+              <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+              <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+              <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+              <label for="ccnum">Credit card number</label>
+              <input autocomplete="off" type="text" id="ccnum" name="cardnumber" class="input-lg form-control ccnum" placeholder="1111-2222-3333-4444" pattern="^[1-9]{12,0}">
+              <div id="cardnumber_error"><span style="color: red;">Card Number should have 12 number</span></div>
+              <label for="expmonth">Expire Day</label>
+              <input autocomplete="off" type="text" id="expmonth" name="expmonth" class="input-lg form-control expmonth" autocomplete="expmonth" placeholder="**/**" pattern="^[1-9]{2,0}/[1-9]{2,0}">
+              <div id="exp_error"><span style="color: red;">Date expire should be month/year</span></div>
+              <label for="cvv">CVV</label>
+              <input autocomplete="off" type="text" id="cvv" name="cvv" class="input-lg form-control cvv" autocomplete="cvv" placeholder="3 digit number" pattern="^[1-9]{3,0}">
+              <div id="cvv_error"><span style="color: red;">CCV is 3 legit number behind the card</span></div>
+              <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+          </label>
+          <div id="correctForm" onsubmit="return false" class = "error"></div>
+          <button type="submit" value="Continue to checkout" class="btn">Payment</button>
+        </form>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <script src="js/products.js"></script>
+            <script src="js/glass_product.js"></script>
+            <script src="js/zoomsl.min.js"></script>
+</body>
+</html>

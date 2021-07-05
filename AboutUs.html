@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>CSS Responsive Contact Form With Google Map</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="stylesheet" href="bootstrap//css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <script   src="https://code.jquery.com/jquery-3.6.0.js"   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="   crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/style_product.css">
+        <link rel="stylesheet" href="/css/contactpage.css">
+	
+	</head>
+	<body onload="javascript:addCart()">
+        <div class="image-header">
+            <div class="main_page">
+                <div class="main_nav">
+                    <div class="row">
+                        <div class="col-md-8 col-xs-6 logo">
+                        </div>
+                        <div class="col-md-4 col-xs-6 menu">
+                            <ul>
+                                <li><button type="button" class="btn-cart" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button></li>
+                                <li><a href="login.html">Sign in|Sign Up</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-content">
+                            <h1>Welcome to Eyeconic Store</h1>
+                            <h2>At Eyeconic Store, You’ll find more than 100 designer brands all with free delivery and free returns. Our customers come for our huge range of products and our top level of customer service. And bring you the very best the world of designer eyewear has to offer.</h2>
+                        </div>  
+                        <div class="col-md-12 col-xs-12 nav">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="#">SUNGLASESS</a>
+                                    <div class="menu-drop">
+                                    <ul class="menu-drop-ul">
+                                        <li class="menu-drop-li"><a href="/glass_brand.html?key1=g">Gucci</a></li>
+                                        <li class="menu-drop-li"><a href="/glass_brand.html?key1=k">Calve Kevins</a></li>
+                                        <li class="menu-drop-li"><a href="/glass_brand.html?key1=l">Lacoste</a></li>
+                                        <li class="menu-drop-li"><a href="/glass_brand.html?key1=n">Nike</a></li>
+                                    </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#">CONTACT LENS</a>
+                                    <div class="menu-drop">
+                                        <ul class="menu-drop-ul">
+                                            <li class="menu-drop-li"><a href="/brand.html?key1=a">AirOptix</a></li>
+                                            <li class="menu-drop-li"><a href="/brand.html?key1=c">ChromaView</a></li>
+                                            <li class="menu-drop-li"><a href="/brand.html?key1=e">EyesFusion</a></li>
+                                            <li class="menu-drop-li"><a href="/brand.html?key1=f">FreshLook</a></li>
+                                        </ul>
+                                        </div>
+                                </li>
+                                <li><a href="/ServicePage.html">SERVICES</a>
+                                    <div class="menu-drop">
+                                        <ul class="menu-drop-ul">
+                                            <!-- <li class="menu-drop-li"><a href="#">Free-Delivery</a></li>
+                                            <li class="menu-drop-li"><a href="#">Cleaning</a></li>
+                                            <li class="menu-drop-li"><a href="#">Warranty</a></li> -->
+                                        </ul>
+                                        </div></li>
+                                <li><a href="/ContactPage.html">CONTACT US</a>
+                                    <div class="menu-drop">
+                                        <ul class="menu-drop-ul">
+                                            <!-- <!-- <li class="menu-drop-li"><a href="#">Location Store</a></li> -->
+                                            <li class="menu-drop-li"><a href="AboutUs.html">About Us</a></li> -->
+                                        </ul></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>  
+                 
+            </div>
+        </div>
+
+
+            <div class="banner2">
+                <img src="image/panel/aboutus.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <div class="content-img">
+                    <img src="image/panel/EyeconicStore.jpg">
+                    <div class="content-h">
+                    <h1>Our Story<h1>
+                      <h4>Eyeonic Store is an American owned(Address: 36929 SCHOOLCRAFT RD LIVONIA, MI 48150, US) and operated online retailer of eyeglasses. Since the website launch in 2004, we have delivered over a million pairs of eyeglasses while maintaining our standard of providing the highest quality at affordable prices. We are a group of eye doctors that understands your struggle with the high cost of eyeglasses.<br> We strive to make your experience with EyeonicStore.com one that is not only user-friendly but also professional and reliable. Being able to deliver superior eyeglasses at an unbeatably-low price has allowed us to help people all over the world see clearly and, in turn, has provided our team with a more rewarding experience than we could have ever anticipated. We guarantee your satisfaction.
+                        </h4>
+                    </div>
+                </div>
+                <div class="content-img1">
+                    <div class="content-h">
+                    <h1>Our Vision</h1>
+                    <h4>At EyeonicStore.com, our client-oriented philosophy makes your visual needs our first priority. We have created a culture of integrity and honesty, so you can shop with confidence.
+                        <br>- Our company strives to ensure all clients will have the best possible customer experience.
+                        <br>- Our frame sourcing and quality control protocols give you the best online selection of unbeatable-priced eyeglasses anywhere.
+                        <br>- Our Quality Assurance optical technicians will inspect your eyeglasses extensively before they are delivered.
+                        <br>- Our prescription eyeglasses frames and sunglasses come with a 90-day quality guarantee.
+                        <br>- Our international logistic centers allow us to provide the most stylish top quality eyeglasses at unbeatable prices to customers around the world. From our integrated, centralized international distribution center, we are able to ship orders worldwide and service customers across the globe. We have delivered our quality eyewear to customers in more than 45 countries!
+                    </h4>
+                        </div>
+                    <img src="image/panel/EyeconicStore1.jpg">
+                </div>
+
+            </div>
+
+			
+
+	  <!-- /*Our Team*/ -->
+
+      <footer>
+        <div class="footer">
+            <div class="container-footer">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Eyeonic Store</h4>
+                        <ul>
+                            <li><a href="̀index.html">Home Page</a></li>
+                            <li><a href="ContactPage.html">Location Us</a></li>
+                            <li><a href="ContactPage.html">Send Us Message</a></li>
+                            <li><a href="̀AboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Branding Sunglasses</h4>
+                        <ul>
+                            <li><a href="glass_brand.html?key1=g">Gucci</a></li>
+                            <li><a href="glass_brand.html?key1=k">Calve Kevins</a></li>
+                            <li><a href="glass_brand.html?key1=l">Lacoste</a></li>
+                            <li><a href="glass_brand.html?key1=n">Nike</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contact Lenses</h4>
+                        <ul>
+                            <li><a href="brand.html?key1=a">AirOptix</a></li>
+                            <li><a href="brand.html?key1=c">ChromaView</a></li>
+                            <li><a href="brand.html?key1=e">EyesFusion</a></li>
+                            <li><a href="brand.html?key1=f">FreshLook</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="̀#" class="fa fa-facebook"></a>
+                            <a href="̀#" class="fa fa-twitter"></a>
+                            <a href="̀#" class="fa fa-youtube"></a>
+                            <a href="̀#" class="fa fa-instagram"></a>
+                        </div>
+                        <aside>
+                            <h4>Call Us</h4>
+                            <h5>Call: 1.800.556.926</h5>
+                            <h5>MON-FRI 9AM - 5PM</h5>
+                            <h5>Email: eyeonicstore@gmail.com</h5>
+                            <img src="image/icon-web/QR.png">
+                        </aside>
+                    </div>
+                </div>
+                <div class="last-content">
+                    <h4>&copy Copy Right By Group 2 Class T1-M0-2103</h4>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Form -->
+   <!-- Form -->
+   <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">Shopping Cart</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+            
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer" onsubmit="return false">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" onclick ="openForm()" class="btn btn-primary">Order now</button>
+          <button class="clear-cart btn btn-danger">Clear Cart</button>
+        </div>
+      </div>
+    </div>
+
+      <!-- Form -->
+    <div class="container-order"  id="form">
+    <form class = "order-form" action="index.html" id="paymentform" onsubmit="return validatedPaymentForm()"> 
+      <div class="row">
+        <div class="col-50">
+            <button class="closeform" onclick="closeForm()" style="width:25px;cursor: pointer;">X</button>
+          <h3>Billing Address</h3>
+          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+          <input type="text" id="email" name="email" placeholder="john@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="John M. Doe" required>
+          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+          <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" required>
+        <div class="col-50">
+          <h3>Payment</h3>
+          <label for="fname">Accepted Cards</label>
+          <div class="icon-container">
+            <i class="fa fa-cc-visa" style="color:navy;"></i>
+            <i class="fa fa-cc-amex" style="color:blue;"></i>
+            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+            <i class="fa fa-cc-discover" style="color:orange;"></i>
+          </div>
+          <label for="cname">Name on Card</label>
+          <input type="text" id="cname" name="cardname" placeholder="John More Doe" required>
+          <label for="ccnum">Credit card number</label>
+          <input autocomplete="off" type="text" id="ccnum" name="cardnumber" class="input-lg form-control ccnum" placeholder="1111-2222-3333-4444" pattern="^[1-9]{12,0}">
+          <div id="cardnumber_error"><span style="color: red;">Card Number should have 12 number</span></div>
+          <label for="expmonth">Expire Day</label>
+          <input autocomplete="off" type="text" id="expmonth" name="expmonth" class="input-lg form-control expmonth" autocomplete="expmonth" placeholder="**/**" pattern="^[1-9]{2,0}/[1-9]{2,0}">
+          <div id="exp_error"><span style="color: red;">Date expire should be month/year</span></div>
+          <label for="cvv">CVV</label>
+          <input autocomplete="off" type="text" id="cvv" name="cvv" class="input-lg form-control cvv" autocomplete="cvv" placeholder="3 digit number" pattern="^[1-9]{3,0}">
+          <div id="cvv_error"><span style="color: red;">CCV is 3 legit number behind the card</span></div>
+          <label>
+        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+      </label>
+      <div id="correctForm" onsubmit="return false" class = "error"></div>
+      <button type="submit" value="Continue to checkout" class="btn">Payment</button>
+    </form>
+  </div>
+</div>
+
+
+      
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/products.js"></script>
+		<script src="js/glass_product.js"></script>
+</body>
+</html>
